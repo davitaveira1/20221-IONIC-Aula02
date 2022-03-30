@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdicionarProdutoPage implements OnInit {
 
+  nome : string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  cadastrar(){
+    
   }
 
 }
