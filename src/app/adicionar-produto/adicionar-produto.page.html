@@ -1,9 +1,22 @@
+
+<!-- BOTÃO VOLTAR -->
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="selecionar-produto" text="Voltar"></ion-back-button>
+    </ion-buttons>
+
     <ion-title>adicionar-produto</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+<!-- INPUT -->
+<ion-item>
+  <ion-label position="floating">N1:</ion-label>
+  <ion-input [(ngModel)]="n1"></ion-input>
+</ion-item>
+
 
 </ion-content>
