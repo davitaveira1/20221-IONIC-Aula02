@@ -8,7 +8,7 @@
 
   <ion-item class="padding-start padding">
     <ion-label>Gaming</ion-label>
-    <ion-select interface="popover">
+    <ion-select [(ngModel)]="itemSelecionado" (ionChange)="visualizarProduto()" interface="popover">
       <ion-select-option value="NES">NES</ion-select-option>
       <ion-select-option value="Nintendo64">Nintendo64</ion-select-option>
       <ion-select-option value="PlayStation">PlayStation</ion-select-option>
@@ -20,7 +20,7 @@
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
+      <ion-icon name="add" (click)="adicionarProduto()"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 

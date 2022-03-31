@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelecionarProdutoPage implements OnInit {
 
-  constructor() { }
+  itemSelecionado : String;
+
+  constructor(private router : Router) { }
 
   ngOnInit() {
   }
+
+  adicionarProduto(){
+    this.router.navigate(['adicionar-produto']);
+  }
+
+  visualizarProduto(){
+    
+  }
+
+
 
 }
