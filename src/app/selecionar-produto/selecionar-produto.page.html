@@ -6,7 +6,7 @@
 
 <ion-content>
 
-  <ion-item>
+  <ion-item class="padding-start padding">
     <ion-label>Gaming</ion-label>
     <ion-select interface="popover">
       <ion-select-option value="NES">NES</ion-select-option>
@@ -17,5 +17,11 @@
       <ion-select-option value="SNES">SNES</ion-select-option>
     </ion-select>
   </ion-item>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>
