@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-visualizar-produto',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VisualizarProdutoPage implements OnInit {
 
-  constructor() { }
+  itemSelecionado : string;
+
+  constructor(private actRoute : ActivatedRoute) { }
 
   ngOnInit() {
+    this.actRoute.params.subscribe((data:any)=>{
+      this.itemSelecionado = data.item;
+    })
   }
 
 }

@@ -20,7 +20,7 @@ export class SelecionarProdutoPage implements OnInit {
   }
 
   visualizarProduto(){
-    
+    this.router.navigate(['visualizar-produto/'+this.itemSelecionado]);
   }
 
 
